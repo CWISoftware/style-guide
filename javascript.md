@@ -41,11 +41,11 @@ var umaInstancia = new Person();
 * Mantenha em maiúsculo a PrimeiraLetra quando criar construtores/classes:
 ```javascript
 //errado
-function user(nome) {
+function produtoEstoque(nome) {
   this.nome = nome;
 }
 //correto
-function User(nome) {
+function ProdutoEstoque(nome) {
   this.nome = nome;
 }
 ```

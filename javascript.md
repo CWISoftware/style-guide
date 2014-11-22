@@ -17,6 +17,7 @@ function correto() {
 ```javascript
 function errado(){
 }
+
 function correto() {
 }
 ```
@@ -40,11 +41,11 @@ var umaInstancia = new Person();
 
 * Mantenha em maiúsculo a PrimeiraLetra quando criar construtores/classes:
 ```javascript
-//errado
+// errado
 function produtoEstoque(nome) {
   this.nome = nome;
 }
-//correto
+// correto
 function ProdutoEstoque(nome) {
   this.nome = nome;
 }
@@ -58,6 +59,11 @@ var errado = function() {
 
 var correto = function correto() {
 };
+```
+* Prefixe com `$` o nome das variáveis que armazenam objetos do jQuery:
+```javascript
+var parent = $('#parent'); // errado 
+var $parent = $('#parent'); // correto
 ```
 
 ### 'Strings'
@@ -80,7 +86,7 @@ if (condicao) {
   correto = true;
 }
 
-if (condicao) correto = true; //Correto caso a instrução esteja na mesma linha!
+if (condicao) correto = true; // Correto caso a instrução esteja na mesma linha!
 ```
 
 ### Vírgulas`,`
@@ -100,7 +106,7 @@ var prefira,
 var errado = [
   feijao,
   arroz, 
-  abacate, //não coloque a vírgula extra aqui!
+  abacate, // não coloque a vírgula extra aqui!
 ];
  
 var correto = [
@@ -121,7 +127,7 @@ var errado = function errado() {}
 var correto = function correto() {};
 
 function errado() {
-}; //aqui realmente não vai!
+}; // aqui realmente não vai!
 
 function correto() {
 }

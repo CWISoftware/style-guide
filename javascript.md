@@ -1,7 +1,6 @@
 
 # CWI Software JavaScript Style Guide() {
 
- 
 ### ..Espaçamento
 
 1. Indente o código com **2 espaços** [exemplo]
@@ -15,7 +14,7 @@
 
 ### 'Strings'
 
-1. Use aspas simples `'` para criar strings [exemplo]
+1. Use aspas simples `'` para criar strings [exemplo](#chapter-1)
 1. Utilize `+` para concatenar as strings (no fim da linha)
 
 ### Chaves `{   }`
@@ -41,5 +40,10 @@
 1. Use `.` para acessar as propriedades sempre que o nome da propriedade for conhecido
 1. Use `[]` para acessar as propriedades quando o nome da propriedade for desconhecido/parametrizável
 
+
+
+# Exemplos
+
+### Strings <a id="chapter-1"></a>
 
 # };

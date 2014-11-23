@@ -157,4 +157,17 @@ function get(atributo) {
 }
 ```
 
+### `this` is not `that`
+
+* Se você precisar criar uma variável para passar adiante a referênca do objeto atual (bastante comum com KnockoutJS), chame-a sempre de `self`
+```javascript
+function ViewModelWrong() {
+  var that = this; // errado
+}
+
+function ViewModelRight() {
+  var self = this; // certo
+}
+```
+
 # };

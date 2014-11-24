@@ -152,6 +152,7 @@ var z = 0;
 var x = 0,
   y = 0,
   z = 0;
+```
 
 ### Propriedades
 

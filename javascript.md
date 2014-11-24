@@ -141,6 +141,18 @@ errado = true;
 var correto = true;
 ```
 * Declare as variáveis no topo do seu escopo. A única exceção é as variáveis utilizadas como índices em loop, que podem ser declaradas no momento que serão utilizadas.
+* Use somente uma declaração para definir mais de uma variável.
+```javascript
+// errado
+var x = 0;
+var y = 0;
+var z = 0;
+
+// correto
+var x = 0,
+  y = 0,
+  z = 0;
+```
 
 ### Propriedades
 

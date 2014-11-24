@@ -148,7 +148,7 @@ var correto = true;
 ```javascript
 obj.nome_propriedade = 1; // válido e correto
 obj.nome-propriedade = 2; // inválido e errado
-obj['nome-propriedade']= 3; // válido mas errado
+obj['nome-propriedade'] = 3; // válido mas errado
 ```
 * Use `.` para acessar as propriedades sempre que o nome da propriedade for conhecido
 ```javascript

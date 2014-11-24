@@ -144,6 +144,12 @@ var correto = true;
 
 ### Propriedades
 
+* Defina propriedades sem usar aspas. Embora qualquer string possa ser um nome de propriedade, use sempre nomes que permitam o seu uso sem aspas, não iniciando o nome com números ou usando hífens no nome.
+```javascript
+obj.nome_propriedade = 1; // válido e correto
+obj.nome-propriedade = 2; // inválido e errado
+obj['nome-propriedade']= 3; // válido mas errado
+```
 * Use `.` para acessar as propriedades sempre que o nome da propriedade for conhecido
 ```javascript
 obj.correto;

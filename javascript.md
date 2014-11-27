@@ -188,4 +188,19 @@ function ViewModelRight() {
 }
 ```
 
+### Módulos
+
+* Sempre declare ` 'use strict'; ` no topo do módulo.
+```javascript
+;(function(w, d){
+  'use strict';
+
+  function () {
+  
+  }
+
+})(window, document);
+```
+
+
 # };

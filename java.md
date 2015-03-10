@@ -13,4 +13,15 @@ public void errado() {
 }
 ```
 
+### Pacotes
+
+* O nome dos pacotes é lowercase, com palavras consecutivas simplesmente concatenadas, sem usar underscore ou camel case:
+
+```
+br.com.cwi.nomecerto
+
+br.com.cwi.nomeErrado
+br.com.cwi.nome_errado
+```
+
 # }

@@ -1,8 +1,8 @@
-# public class JavaStyleGuide() {
+# public class JavaStyleGuide {
 
 ### ____Indentação
 
-* Indente o código com 1 tab, não com espaços:
+* Indente o código com tabs ao invés de espaços:
 ```java
 public void certo() {
 ____System.out.print("Certo");

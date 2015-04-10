@@ -70,8 +70,10 @@ var $parent = $('#parent'); // correto
 
 * Use aspas simples `'` para criar strings
   
- `var errado = "aspas duplas"`; 
- `var correto = 'aspas simples';`
+```javascript
+var errado = "aspas duplas";
+var correto = 'aspas simples';
+```
 
 * Utilize `+` para concatenar as strings (no fim da linha)
 

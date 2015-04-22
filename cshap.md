@@ -1,27 +1,59 @@
-# public class JavaStyleGuide {
+﻿# public class CSharpStyleGuide {
 
-### ____Indentação
+### Boas Práticas Gerais
+* Use as configurações default da IDE
 
-* Indente o código com tabs ao invés de espaços:
-```java
+### Comentários
+* Espaço após as barras duplas (//)
+
+```cs
+// comentário aqui
+```
+
+### Indentação
+
+* Indente o código com quatro espaços (configuração padrão do VS) ao invés de tabs:
+```
 public void certo() {
-____System.out.print("Certo");
+....Console.WriteLine("Certo");
 }
 
 public void errado() {
-....System.out.print("Errado");
+____Console.WriteLine("Errado");
+}
+
+```
+### Classes
+* O Nome de classes é PascalCase:
+```
+public class CálculoAritimético {
+
+}
+```
+### Métodos
+* O Nome de métodos é camelCase:
+```
+public class CalculoAritimetico {
+	public double calcularMedia() {
+	// ...
+	}
 }
 ```
 
-### Pacotes
+### Namespaces
 
-* O nome dos pacotes é lowercase, com palavras consecutivas simplesmente concatenadas, sem usar underscore ou camel case:
-
+* O nome dos namespaces é PascalCase, com palavras consecutivas simplesmente concatenadas, sem usar underscore
+* Quando a codificação é em português, pode-se usar acentuação no nome de namespace
 ```
-br.com.cwi.nomecerto
+// correto
+namespace NomeCliente.CamadaServiço.Usuário {
 
-br.com.cwi.nomeErrado
-br.com.cwi.nome_errado
+}
+
+// errado
+namespace nomeCliente.camadaserviço.usuário {
+
+}
 ```
 
 # }

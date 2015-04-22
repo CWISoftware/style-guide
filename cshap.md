@@ -6,14 +6,14 @@
 ### Comentários
 * Espaço após as barras duplas (//)
 
-```c#
+```csharp
 // comentário aqui
 ```
 
 ### Indentação
 
 * Indente o código com quatro espaços (configuração padrão do VS) ao invés de tabs:
-```cs
+```csharp
 public void certo() {
 ....Console.WriteLine("Certo");
 }
@@ -25,7 +25,7 @@ ____Console.WriteLine("Errado");
 ```
 ### Classes
 * O Nome de classes é PascalCase:
-```
+```csharp
 public class CálculoAritmético {
 
 }
@@ -44,7 +44,7 @@ public class CalculoAritmetico {
 
 * O nome dos namespaces é PascalCase, com palavras consecutivas simplesmente concatenadas, sem usar underscore
 * Quando a codificação é em português, pode-se usar acentuação no nome de namespace
-```
+```csharp
 // correto
 namespace NomeCliente.CamadaServiço.Usuário {
 

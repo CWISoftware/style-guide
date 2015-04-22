@@ -6,14 +6,14 @@
 ### Comentários
 * Espaço após as barras duplas (//)
 
-```cs
+```c#
 // comentário aqui
 ```
 
 ### Indentação
 
 * Indente o código com quatro espaços (configuração padrão do VS) ao invés de tabs:
-```
+```cs
 public void certo() {
 ....Console.WriteLine("Certo");
 }
@@ -32,7 +32,7 @@ public class CálculoAritimético {
 ```
 ### Métodos
 * O Nome de métodos é camelCase:
-```
+```csharp
 public class CalculoAritmetico {
 	public double calcularMedia() {
 	// ...

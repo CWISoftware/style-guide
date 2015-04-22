@@ -26,7 +26,7 @@ ____Console.WriteLine("Errado");
 ### Classes
 * O Nome de classes é PascalCase:
 ```
-public class CálculoAritimético {
+public class CálculoAritmético {
 
 }
 ```

@@ -33,7 +33,7 @@ public class CálculoAritimético {
 ### Métodos
 * O Nome de métodos é camelCase:
 ```
-public class CalculoAritimetico {
+public class CalculoAritmetico {
 	public double calcularMedia() {
 	// ...
 	}

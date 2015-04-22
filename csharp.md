@@ -63,5 +63,10 @@ namespace nomeCliente.camadaserviço.usuário {
 
 }
 ```
+### Declarações
+* Use declaração implícita **var** para variáveis locais:
+```csharp
+var usuario = new Usuario();
+```
 
 # }

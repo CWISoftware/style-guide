@@ -14,11 +14,11 @@
 
 * Indente o código com quatro espaços (configuração padrão do VS) ao invés de tabs:
 ```csharp
-public void certo() {
+public void Certo() {
 ....Console.WriteLine("Certo");
 }
 
-public void errado() {
+public void Errado() {
 ____Console.WriteLine("Errado");
 }
 
@@ -31,11 +31,19 @@ public class CálculoAritmético {
 }
 ```
 ### Métodos
-* O Nome de métodos é camelCase:
+* O Nome de métodos **privados** é **camelCase**:
 ```csharp
 public class CalculoAritmetico {
-	public double calcularMedia() {
-	// ...
+	private double calcularMedia() {
+		// ...
+	}
+}
+```
+* O Nome de métodos **públicos** é **PascalCase**:
+```csharp
+public class CalculoAritmetico {
+	public double CalcularMedia() {
+		// ...
 	}
 }
 ```

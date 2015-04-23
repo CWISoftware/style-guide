@@ -31,15 +31,7 @@ public class CálculoAritmético {
 }
 ```
 ### Métodos
-* O Nome de métodos **privados** é **camelCase**:
-```csharp
-public class CalculoAritmetico {
-	private double calcularMedia() {
-		// ...
-	}
-}
-```
-* O Nome de métodos **públicos** é **PascalCase**:
+* O Nome de métodos é **PascalCase**:
 ```csharp
 public class CalculoAritmetico {
 	public double CalcularMedia() {

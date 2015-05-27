@@ -1,4 +1,4 @@
-﻿# public class CSharpStyleGuide {
+# public class CSharpStyleGuide {
 
 ### Boas Práticas Gerais
 * Use as configurações default da IDE
@@ -60,5 +60,14 @@ namespace nomeCliente.camadaserviço.usuário {
 ```csharp
 var usuario = new Usuario();
 ```
-
+### Linq
+* Use declaração implícita **var** e uma variável intermediária para visualizar a consulta quando a coleção de dados for **IQueryable**:
+```csharp
+var query = from u in dBContext.Usuarios
+			where u.Cidade == "Porto Alegre"
+			select u;
+			
+var listaUsuarios = query.ToList();
+var quantidadeUsuarios = query.Count();
+```
 # }

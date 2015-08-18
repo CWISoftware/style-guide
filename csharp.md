@@ -1,4 +1,5 @@
-# public class CSharpStyleGuide {
+# public class CSharpStyleGuide 
+# {
 
 ### Boas Práticas Gerais
 * Use as configurações default da IDE
@@ -14,11 +15,13 @@
 
 * Indente o código com quatro espaços (configuração padrão do VS) ao invés de tabs:
 ```csharp
-public void Certo() {
+public void Certo()
+{
 ....Console.WriteLine("Certo");
 }
 
-public void Errado() {
+public void Errado()
+{
 ____Console.WriteLine("Errado");
 }
 
@@ -26,15 +29,18 @@ ____Console.WriteLine("Errado");
 ### Classes
 * O Nome de classes é PascalCase:
 ```csharp
-public class CálculoAritmético {
+public class CálculoAritmético
+{
 
 }
 ```
 ### Métodos
 * O Nome de métodos é **PascalCase**:
 ```csharp
-public class CalculoAritmetico {
-	public double CalcularMedia() {
+public class CalculoAritmetico
+{
+	public double CalcularMedia()
+	{
 		// ...
 	}
 }
@@ -46,12 +52,14 @@ public class CalculoAritmetico {
 * Quando a codificação é em português, pode-se usar acentuação no nome de namespace
 ```csharp
 // correto
-namespace NomeCliente.CamadaServiço.Usuário {
+namespace NomeCliente.CamadaServiço.Usuário
+{
 
 }
 
 // errado
-namespace nomeCliente.camadaserviço.usuário {
+namespace nomeCliente.camadaserviço.usuário
+{
 
 }
 ```

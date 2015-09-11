@@ -204,5 +204,14 @@ function ViewModelRight() {
 })(window, document);
 ```
 
+### Line Length < 80
+
+* Para melhorar a leitura do código, evitar linhas com mais de 80 caracteres.
+* Caso a linha não caiba em 80 caracteres e não seja possível refatorar, pode-se quebrar
+
+```javascript
+document.getElementById("demo").innerHTML =
+    'Hello Dolly.';
+```
 
 # };

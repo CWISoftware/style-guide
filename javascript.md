@@ -52,7 +52,7 @@ function ProdutoEstoque(nome) {
 ```
 
 *  Nomeie as constantes `DESTA_FORMA_AQUI`
-*  Dê nomes para todas as funções, inclusive quando estas são atribuídas para variáveis. Isto ajuda na leitura dos stacktraces. 
+*  Dê nomes para todas as funções, inclusive quando estas são atribuídas para variáveis. Isto ajuda na leitura dos stacktraces.
 ```javascript
 var errado = function() {
 };
@@ -62,14 +62,14 @@ var correto = function correto() {
 ```
 * Prefixe com `$` o nome das variáveis que armazenam objetos do jQuery:
 ```javascript
-var parent = $('#parent'); // errado 
+var parent = $('#parent'); // errado
 var $parent = $('#parent'); // correto
 ```
 
 ### 'Strings'
 
 * Use aspas simples `'` para criar strings
-  
+
 ```javascript
 var errado = "aspas duplas";
 var correto = 'aspas simples';
@@ -81,9 +81,9 @@ var correto = 'aspas simples';
 
 * Use. A única exceção é quando a instrução inteira couber na mesma linha.
 ```javascript
-if (condicao) 
+if (condicao)
   errado = true;
-  
+
 if (condicao) {
   correto = true;
 }
@@ -98,21 +98,21 @@ if (condicao) correto = true; // Correto caso a instrução esteja na mesma linh
 var nao
  , faça
  , isso;
- 
+
 var prefira,
-  fazer, 
+  fazer,
   isso;
 ```
 * Não coloque vírgulas "extras" no fim. Isto causa bugs no IE.
 ```javascript
 var errado = [
   feijao,
-  arroz, 
+  arroz,
   abacate, // não coloque a vírgula extra aqui!
 ];
- 
+
 var correto = [
-  feijao, 
+  feijao,
   arroz,
   abacate
 ];
@@ -120,7 +120,7 @@ var correto = [
 
 ### Ponto e vírgula`;`
 
-* Use. Não colocar pode causar bugs bizarros. 
+* Use. Não colocar pode causar bugs bizarros.
 ```javascript
 var errado = true
 var correto = true;
@@ -139,7 +139,7 @@ function correto() {
 
 * Declare as variáveis com `var`. Não utilizar `var` faz com que as variáveis apareçam no escopo global.
 ```javascript
-errado = true; 
+errado = true;
 var correto = true;
 ```
 * Declare as variáveis no topo do seu escopo. A única exceção é as variáveis utilizadas como índices em loop, que podem ser declaradas no momento que serão utilizadas.
@@ -198,11 +198,27 @@ function ViewModelRight() {
   'use strict';
 
   function () {
-  
+
   }
 
 })(window, document);
 ```
 
+### Line Length < 80
+
+* Para melhorar a leitura do código, evitar linhas com mais de 80 caracteres.
+* Caso a linha não caiba em 80 caracteres e não seja possível refatorar, pode-se quebrar
+
+```javascript
+// errado
+document.getElementById("demo").innerHTML = metodoGiganteeComMuitosParametrosEmUmaLinhaComMaisDe80Caracteres('Hello Dolly.', 'UPPER');
+
+// Certo
+document.getElementById("demo").innerHTML = 'Hello Dolly.';
+
+document.getElementById("demo").innerHTML = metodoGiganteeComMuitosParametros(
+    'Hello Dolly.',
+    'UPPER');
+```
 
 # };
